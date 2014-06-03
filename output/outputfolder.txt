@@ -1,0 +1,3 @@
+HTML files compiled by FlatOut will be created in this folder.
+
+Make sure the folder has write permission.
