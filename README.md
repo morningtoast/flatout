@@ -1,16 +1,4 @@
 
-<html>
-<head>
-	<title></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		body { font-family:arial,helvetica,sans-serif; padding:40px; }
-		code { background-color:#efefef;padding:2px;}
-		h2 { border-bottom:solid 3px #ccc;}
-	</style>
-</head>
-<body>
 
 	<!-- START: component -->
 	<h1><em>FlatOut</em> Mini HTML Compiler</h1>
@@ -99,5 +87,3 @@
 		variables that are then accessible in the partial. <strong><em>There is no double-curly bracket
 		replacement in dynamic partials.</em></strong>
 	</p>
-</body>
-</html>
