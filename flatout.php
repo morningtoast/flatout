@@ -14,13 +14,19 @@
 		exit();
 	}
 
-	function inc_static($path, $vars=false) {
+	function inc_static($path, $vars=false, $parse=false) {
 		$source = file_get_contents($path);
 
 		if ($vars) {
 			foreach($vars as $key => $value){
 			    $source = str_replace('{{'.$key.'}}', $value, $source);
 			}
+		}
+
+		if ($parse) {
+			$source = end(explode("<!--FLATOUT:START-->", $source));
+			$source = current(explode("<!--FLATOUT:END-->", $source));			
+
 		}
 
 		echo "<!-- START: ".$path." -->\n";
