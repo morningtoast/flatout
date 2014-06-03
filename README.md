@@ -1,7 +1,7 @@
 FlatOut HTML Compiler
 =======
 
-Simple PHP-based HTML compiler for prototyping.
+Simple, *single-file* PHP-based HTML compiler for prototyping.
 
 I created this because I needed a way to compile modules into full pages
 and didn't have ability to install or configure any other utilities, like Grunt. PHP 
