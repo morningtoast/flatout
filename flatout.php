@@ -48,7 +48,7 @@
 			var prefill = "";
 
 			if(typeof(Storage)!=="undefined") {
-				if (sessionStorage.exportname.length > 0) {
+				if (sessionStorage.exportname && sessionStorage.exportname.length > 0) {
 					prefill = sessionStorage.exportname;
 				}
 			}
@@ -66,7 +66,7 @@
 	}
 
 	onready(function() {
-		document.body.innerHTML += '<button type="button" onclick="compile(\''+window.location+'\')" style="position:absolute;top:10px;right:10px">Compile</button>';
+		document.body.innerHTML += '<button type="button" onclick="compile(\''+window.location+'\')" style="position:absolute;top:10px;right:10px;z-index:9999;">Compile</button>';
 	});
 </script>
 <? } ?>
